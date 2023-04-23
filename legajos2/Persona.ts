@@ -12,3 +12,4 @@ export class Persona {
         this.fechaNacimiento = fechaNac
     }
 }
+

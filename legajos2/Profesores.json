@@ -1,3 +1,40 @@
-[{"nombre":"Pedro","apellido":"Suarez","dni":39433649,"fechaNacimiento":"01/12/1985","contrato":"573b4","email":"juancho@gmail.com","celular":2281554411,"fechaIngreso":"4/23/2023","materias":[]},
+[
+  {
+    "nombre": "Pedro",
+    "apellido": "Suarez",
+    "dni": 39433649,
+    "fechaNacimiento": "01/12/1985",
+    "contrato": "573b4",
+    "email": "juancho@gmail.com",
+    "celular": 2281554411,
+    "fechaIngreso": "4/23/2023",
+    "materias": []
+  },
 
-{"nombre":"Juan","apellido":"Peralta","dni":39433649,"fechaNacimiento":"01/12/1985","contrato":"ce4a5","email":"juancho@gmail.com","celular":2281554411,"fechaIngreso":"4/23/2023","materias":[{"nombre":"Biologia","nota":false},{"nombre":"Fisica","nota":false}]}]
+  {
+    "nombre": "Juan",
+    "apellido": "Peralta",
+    "dni": 39433649,
+    "fechaNacimiento": "01/12/1985",
+    "contrato": "ce4a5",
+    "email": "juancho@gmail.com",
+    "celular": 2281554411,
+    "fechaIngreso": "4/23/2023",
+    "materias": [
+      { "nombre": "Biologia", "nota": false },
+      { "nombre": "Fisica", "nota": false }
+    ]
+  },
+
+  {
+    "nombre": "Varios",
+    "apellido": "weijwfe",
+    "dni": 41564135,
+    "fechaNacimiento": "01/04/1990",
+    "contrato": "a132e",
+    "email": "mcfw@gmail.com",
+    "celular": 2281445522,
+    "fechaIngreso": "4/23/2023",
+    "materias": []
+  }
+]
