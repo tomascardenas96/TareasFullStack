@@ -2,15 +2,13 @@ import * as fs from "fs";
 
 let check = (path:string) => {
     if(fs.existsSync(path)) {
-        console.log("Ruta existente");
         return true;
     } else {
-    console.log("Ruta inexistente");
     return false;
     }
 }
 
-let read = (path: string): Object | undefined => {
+let read = (path: string): any  => {
     try {
         return JSON.parse(fs.readFileSync(path, "utf8"))
     } catch (error) {
@@ -18,20 +16,24 @@ let read = (path: string): Object | undefined => {
     }
 }
 
-let write = (path: string, data: string) => {
+let write = (path: string, data: Object) => {
         return fs.writeFileSync(path, JSON.stringify(data), "utf8");
 }
 
-let save = (path: string, data: string) => {
+let save = (path: string, data: Object) => {
     if (check(path)) {
-        let aux: Object | undefined = read(path);
-        
+        let prueba = [...read(path), data];
+        return write(path, prueba);
     } else {
-        
+        return write(path, [data]);
     }
-
 }
-let path:string = "./alumno.json"
+
+export { save, read, check, write };
+
+
+
+
 
 
 

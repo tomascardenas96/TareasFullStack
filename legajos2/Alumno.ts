@@ -1,17 +1,23 @@
-import { Persona } from "./AbstractPersona";
-import { Materias } from "./Materias";
+import { Persona } from "./Persona";
+import { Naturales, Sociales } from "./Materias";
 import { Curso } from "./Curso";
 const { v4: uuidv4 } = require('uuid');
+import {read} from "./Functions";
 
 export class Alumno extends Persona {
     private matricula: string;
-    private materias: Materias[];
-    private curso: Curso;
+    private naturales?: Naturales;
+    private sociales?: Sociales;
+    private curso: Curso | string;
 
-    constructor(nombre: string, apellido: string, dni: number, edad: number, curso: Curso) {
+    constructor(nombre: string, apellido: string, dni: number, edad: number, modalidad: string, curso: Curso | string) {
         super(nombre, apellido, dni, edad);
         this.matricula = uuidv4().slice(0,5);
-        this.materias = [];
+        if((modalidad).toLowerCase() === "naturales") {
+            this.naturales = read("./Naturales.json");
+        } else if((modalidad).toLowerCase() === "sociales") {
+            this.sociales = read("./Sociales.json");
+        }
         this.curso = curso;
     }
 }
