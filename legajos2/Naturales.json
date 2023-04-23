@@ -1,1 +1,6 @@
-[{"nombre":"Quimica","nota": false},{"nombre":"Biologia","nota": false},{"nombre":"Fisica","nota": false},{"nombre":"Geologia","nota": false},{"nombre":"Astronomia","nota": false},{"materia":"Filosofia","nota": false}]
+[{"nombre":"Quimica","nota": false},
+{"nombre":"Biologia","nota": false},
+{"nombre":"Fisica","nota": false},
+{"nombre":"Geologia","nota": false},
+{"nombre":"Astronomia","nota": false},
+{"materia":"Filosofia","nota": false}]
