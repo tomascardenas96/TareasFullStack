@@ -11,9 +11,9 @@ export class Escuela {
         return newCourse;
     }
 
-    addStudent(nombre: string, apellido: string, dni: number, edad: number, modalidad: string, curso: string) {
+    addStudent(nombre: string, apellido: string, dni: number, fechaNac: string, modalidad: string, curso: string) {
         let course = this.addCourse(curso);
-        let newStudent = new Alumno(nombre, apellido, dni, edad, modalidad, course);
+        let newStudent = new Alumno(nombre, apellido, dni, fechaNac, modalidad, course);
         save("./Alumnos.json", newStudent);
         console.log(`The student ${nombre} has been added correctly`);
     }
@@ -35,7 +35,8 @@ export class Escuela {
     
     findStudent(nombre: string, apellido: string, matricula: string): Object {
         let studentsList = read("./Alumnos.json");
-        let found = studentsList.filter((student: any) => (student.nombre === nombre) && (student.apellido === apellido) && (student.matricula === matricula));
+        let found = studentsList.filter((student: any) => (student.nombre === nombre) && (student.apellido === apellido) || (student.matricula === matricula));
+        console.log(found);
         return found;
     }
 
@@ -80,9 +81,13 @@ export class Escuela {
         console.log(read("./Alumnos.json"));
     }
 
-    addTeacher(nombre: string, apellido:string, dni: number, edad: number, email: string, celular: number) {
-        let newTeacher = new Profesor(nombre, apellido, dni, edad, email, celular);
-        save("./Profesor.json", newTeacher);
+    addTeacher(nombre: string, apellido:string, dni: number, fechaNac: string, email: string, celular: number) {
+        let newTeacher = new Profesor(nombre, apellido, dni, fechaNac, email, celular);
+        save("./Profesores.json", newTeacher);
+    }
+
+    deleteTeacher() {
+
     }
 
     addSubjects(modalidad: string, materia: string) {
@@ -92,13 +97,10 @@ export class Escuela {
         } else if(modalidad === "sociales") {
             let newSubject = new Sociales(materia, 0);
             save("./Sociales.json", newSubject);
+        } else {
+            console.log(`The modality ${modalidad} doesn't exist`);
         }
     }
 }
 
-let escuela1 = new Escuela();
-
-let info = document.getElementById("info") as HTMLParagraphElement;
-let prueba = document.getElementById("prueba") as HTMLInputElement;
-let btn = document.getElementById("btn") as HTMLButtonElement;
 

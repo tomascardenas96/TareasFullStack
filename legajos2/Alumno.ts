@@ -10,8 +10,8 @@ export class Alumno extends Persona {
     private sociales?: Sociales;
     private curso: Curso | string;
 
-    constructor(nombre: string, apellido: string, dni: number, edad: number, modalidad: string, curso: Curso | string) {
-        super(nombre, apellido, dni, edad);
+    constructor(nombre: string, apellido: string, dni: number, fechaNacimiento: string, modalidad: string, curso: Curso | string) {
+        super(nombre, apellido, dni, fechaNacimiento);
         this.matricula = uuidv4().slice(0,5);
         if((modalidad).toLowerCase() === "naturales") {
             this.naturales = read("./Naturales.json");
