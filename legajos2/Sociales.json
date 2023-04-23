@@ -1,16 +1,16 @@
 [{
     "nombre": "Ciencia politica", 
-    "nota": 0
+    "nota": false
 },{
     "nombre": "Geografia", 
-    "nota": 0
+    "nota": false
 },{
     "nombre": "Economia", 
-    "nota": 0
+    "nota": false
 },{
     "nombre": "Antropologia", 
-    "nota": 0
+    "nota": false
 },{
     "nombre": "Comunicacion", 
-    "nota": 0
+    "nota": false
 }]

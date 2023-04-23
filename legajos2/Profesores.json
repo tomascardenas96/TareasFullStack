@@ -1,5 +1,3 @@
-[{"nombre":"Silvio","apellido":"Rodriguez","dni":22558855,"fechaNacimiento":"15/04/1975","contrato":"02f50","email":"silvio@gmail.com","celular":2281554422,"fechaIngreso":"4/23/2023"},
+[{"nombre":"Pedro","apellido":"Suarez","dni":39433649,"fechaNacimiento":"01/12/1985","contrato":"573b4","email":"juancho@gmail.com","celular":2281554411,"fechaIngreso":"4/23/2023","materias":[]},
 
-{"nombre":"Leandro","apellido":"Fernandez","dni":22558855,"fechaNacimiento":"15/04/1975","contrato":"2b622","email":"silvio@gmail.com","celular":2281554422,"fechaIngreso":"4/23/2023"},
-
-{"nombre":"Lionel","apellido":"Messi","dni":22558855,"fechaNacimiento":"15/04/1975","contrato":"d142a","email":"silvio@gmail.com","celular":2281554422,"fechaIngreso":"4/23/2023"}]
+{"nombre":"Juan","apellido":"Peralta","dni":39433649,"fechaNacimiento":"01/12/1985","contrato":"ce4a5","email":"juancho@gmail.com","celular":2281554411,"fechaIngreso":"4/23/2023","materias":[{"nombre":"Biologia","nota":false},{"nombre":"Fisica","nota":false}]}]

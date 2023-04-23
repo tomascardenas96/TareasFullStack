@@ -1,8 +1,8 @@
 export class Naturales {
     private materia: string;
-    private nota: number;
+    private nota: number | boolean;
 
-    constructor(materia: string, nota: number ) {
+    constructor(materia: string, nota: number | boolean ) {
         this.materia = materia;
         this.nota = nota;
     }
@@ -10,9 +10,9 @@ export class Naturales {
 
 export class Sociales {
     private materia: string;
-    private nota: number;
+    private nota: number | boolean;
 
-    constructor(materia: string, nota: number ) {
+    constructor(materia: string, nota: number | boolean ) {
         this.materia = materia;
         this.nota = nota;
     }

@@ -1,0 +1,11 @@
+[{"nombre":"Tomas",
+"apellido":"Cardenas",
+"dni":39433649,
+"fechaNacimiento":"24/01/1996",
+"matricula":"1c066",
+"sociales":[{"nombre":"Ciencia politica","nota":false},{"nombre":"Geografia","nota":false},{"nombre":"Economia","nota":false},{"nombre":"Antropologia","nota":false},{"nombre":"Comunicacion","nota":false}],
+"curso":{"nombre":"2C","id":6000}},
+
+{"nombre":"Juan","apellido":"Vega","dni":39433649,"fechaNacimiento":"24/01/1996","matricula":"26c29","sociales":[{"nombre":"Ciencia politica","nota":false},{"nombre":"Geografia","nota":false},{"nombre":"Economia","nota":false},{"nombre":"Antropologia","nota":false},{"nombre":"Comunicacion","nota":false}],"curso":{"nombre":"1C","id":3000}},
+
+{"nombre":"Marcela","apellido":"Zacarias","dni":39433649,"fechaNacimiento":"24/01/1996","matricula":"ff94a","sociales":[{"nombre":"Ciencia politica","nota":false},{"nombre":"Geografia","nota":false},{"nombre":"Economia","nota":false},{"nombre":"Antropologia","nota":false},{"nombre":"Comunicacion","nota":false}],"curso":{"nombre":"1C","id":3000}}]
