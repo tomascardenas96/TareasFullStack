@@ -1,5 +1,5 @@
 export abstract class Vehicle {
-    carBrand: string;
+     protected carBrand: string;
      protected carModel: string;
      protected color: string;
      protected isOn: boolean;
