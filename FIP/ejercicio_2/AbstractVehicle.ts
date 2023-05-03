@@ -23,7 +23,7 @@ export abstract class Vehicle {
 
     abstract speedUp(): void;
     
-    abstract speedUp(): void;
+    abstract speedDown(): void;
 
     brakeToZero(): number {
         if(this.isOn) {
