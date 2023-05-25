@@ -10,5 +10,5 @@ fetch("https://rickandmortyapi.com/api/character")
         imageTag.src = result.image;
         imageTag.className = "img-char";
         imgDiv.appendChild(imageTag);
-    }).catch(error => console.error(error, "No se pudo cargar el archivo"));
-})
+    })
+}).catch(error => console.error(error, "No se pudo cargar el archivo"));
