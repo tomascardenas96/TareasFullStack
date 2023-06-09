@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script type="module" src="script.js" defer></script>
+    <title>Students list</title>
+  </head>
+  <body>
+    <div class="loading">
+      <p>Cargando datos...</p>
+    </div>
+
+    <header class="header-container">
+      <h1>Api Rest project</h1>
+      <p>I did a project using API CRUD methods (GET, POST, PUT, DELETE)</p>
+      <p>Bring information from fake data base using MockApi app</p>
+    </header>
+
+    <div class="input__container">
+      <input id="search-student" class="form__input" type="text" />
+      <label for="search-student" class="form__label">Buscar</label>
+    </div>
+
+    <!-- Modal para agregar nuevo usuario -->
+    <dialog id="modal-add-student" class="modal-student">
+      <form action="" method="dialog" id="form">
+        <img
+          src="./images/cross.png"
+          alt=""
+          type="button"
+          id="close-modal"
+          class="close-cross-modal"
+        />
+        <label for="fullName-add-student" class="modal__form-label">
+          Nombre completo:
+          <input type="text" id="fullName-add-student" class="label__input" required />
+        </label>
+        <label for="address-add-student" class="modal__form-label">
+          Direccion:
+          <input type="text" id="address-add-student" class="label__input" required />
+        </label>
+        <label for="email-add-student" class="modal__form-label">
+          E-mail:
+          <input type="email" id="email-add-student" class="label__input" required />
+        </label>
+        <label for="phone-add-student" class="modal__form-label">
+          Telefono:
+          <input
+            type="text"
+            id="phone-add-student"
+            pattern="^(?:(?:00)?549?)?0?(?:11|[2368]\d)(?:(?=\d{0,2}15)\d{2})??\d{8}$" class="label__input"
+            required
+          />
+        </label>
+        <div class="modal__input">
+          <input class="modal__input-buttons" type="submit" value="Aceptar" />
+          <input class="modal__input-buttons" type="reset" value="Limpiar" />
+        </div>
+      </form>
+    </dialog>
+
+    <!-- Modal para modificar usuario -->
+    <dialog id="modal-mod-student" class="modal-student">
+      <form action="" method="dialog" id="mod-form">
+        <img
+          src="./images/cross.png"
+          alt=""
+          type="button"
+          id="close-mod-modal"
+          class="close-cross-modal"
+        />
+        <label for="fullName-mod-student" class="modal__form-label">
+          Nombre completo:
+          <input type="text" id="fullName-mod-student" class="label__input" required />
+        </label>
+        <label for="address-mod-student" class="modal__form-label">
+          Direccion:
+          <input type="text" id="address-mod-student" class="label__input" required />
+        </label>
+        <label for="email-mod-student" class="modal__form-label">
+          E-mail:
+          <input type="email" id="email-mod-student" class="label__input" required />
+        </label>
+        <label for="phone-mod-student" class="modal__form-label">
+          Telefono:
+          <input
+            type="text"
+            id="phone-mod-student"
+            pattern="^(?:(?:00)?549?)?0?(?:11|[2368]\d)(?:(?=\d{0,2}15)\d{2})??\d{8}$" class="label__input"
+            required
+          />
+        </label>
+        <div class="modal__input">
+          <input class="modal__input-buttons" type="submit" value="Aceptar" />
+          <input class="modal__input-buttons" type="reset" value="Limpiar" />
+        </div>
+      </form>
+    </dialog>
+
+    <div id="root">
+      <div class="students-data">
+        <p>Id</p>
+        <p>Nombre completo</p>
+        <p>Direccion</p>
+        <p>Telefono</p>
+        <p>E-mail</p>
+        <div class="plus-icon-container">
+          <img
+            id="add"
+            class="plus-icon"
+            src="./images/plus.png"
+            alt="plus-icon"
+          />
+          <p class="add-student-text">Agregar alumno</p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
